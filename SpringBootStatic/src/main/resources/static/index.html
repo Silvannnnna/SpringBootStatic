@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invernaderos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Invernadero</h1>
+        <form id="invernaderoForm">
+            <label for="id">ID del Invernadero:</label>
+            <input type="text" id="id" name="id" required>
+            <label for="id">Tipo de Actuador:</label>
+            <div class="radio-group">
+                <input type="radio" id="actuadorRiegoLluvia" name="actuadorRiego" value="lluvia" required>
+                <label for="actuadorRiegoLluvia">ActuadorRiegoLluvia</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="actuadorRiegoNormal" name="actuadorRiego" value="normal" required>
+                <label for="actuadorRiegoNormal">ActuadorRiegoNormal</label>
+            </div>
+            <button type="submit">Agregar Invernadero</button>
+        </form>
+        
+        <h1>Lista de Invernaderos</h1>
+        <ul id="invernaderos-list"></ul>
+    </div>
+</body>
+</html>
